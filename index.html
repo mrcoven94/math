@@ -1,0 +1,309 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Math | David Coven</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<!--webfonts-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<!--webfonts-->
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="logo">
+					<h1><a href="index.html">Based Mathematician</a></h1>
+				</div>
+			<!--top-nav-->
+			 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#about" class="scroll">Teaching</a></li>
+								
+								<li><a href="qanda.html" class="scroll">Q &amp; A</a></li>
+								<li><a href="mailto:coven@uw.edu" class="">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+		<!-- script-for-menu -->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
+	<!--End-top-nav-script-->
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+		<!--banner-->
+			<div class="banner">
+					<div class="container">
+						 <div class="banner-info">
+						 	<h2>I love math, and I want you to too.</h2>
+						 	<p>I've always believed that we learn 10% by doing and 90% by teaching. I've experienced this first hand and wanted to jump back into the arena. So, if you have a math question, ask me and if I like it, I'll solve it and post it here.</p>
+						 	<a class="slide-btn" href="mailto:coven@uw.edu?subject=Math Question">Ask a question</a>
+						</div>
+					</div>
+			 	</div>
+			</div>
+		<!--Features-->
+		<!--portfolio-->
+<!--
+		<div class="story" id="story">
+			<div class="container">
+					<div class="story-section">
+					 	<div class="story-text">
+					 		<h4>My Short Story</h4>
+					 		<p>I am currently a junior at the University of Washington studying Mechanical Engineering with a dual minor in Mathematics &amp; Entrepreneurship. Over my time I've found that I love to teach! So I decided to put that to the test and improve my math abilities while at the same time helping others.</p>
+					 		<p class="para">I've taught the following, Algebra, PreCalc, Calculus, Diff Eq's, and Linear Algebra. Out of them all my favorite subject is by far Integration. It is the most puzzle like, and there are so many ways to solve problems. Whether its through trig substitution, or revolution of solids, I LOVE it. </p> <br>
+					 		
+					 	</div>
+					 	
+					 	<div class="clearfix"> </div>
+					</div>
+			</div>
+		</div>
+-->
+<!--
+		<div class="clients" id="clients">
+			<div class="container">
+				<h3>My Students Say</h3>
+					<div class="client-section">
+						<div class="col-md-12 client-1">
+					 		<div class="col-md-6 client-gride1">
+					 			<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+					 			<div class ="grid-text">
+					 				<div class ="grid-img">
+					 					<img src="images/c1.png" />
+					 				</div>
+					 				<div class ="grid-content">
+						 				<h4>Joe Doe</h4>
+						 				<span>Creative Deirector at Gmoogle.com</span>
+					 				</div>
+					 				<div class="clearfix"> </div>
+					 			</div>
+					 			<span class="arrow-one"> </span>
+							</div>
+							<div class="col-md-6 client-gride2">
+								<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+					 			<div class ="grid-text">
+					 				<div class ="grid-img">
+					 					<img src="images/c2.png" />
+					 				</div>
+					 				<div class ="grid-content">
+						 				<h4>Joe Doe</h4>
+						 					<span>Creative Deirector at Gmoogle.com</span>
+					 				</div>
+					 				<div class="clearfix"> </div>
+					 			</div>
+					 			<span class="arrow-one"> </span>
+					 	</div>
+
+						<div class="col-md-12 client-2">
+							<div class="col-md-6 client-gride3">
+								<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, fringilla vel, aliquet necvulputate eget,fringilla vel, aliquet nec arcu. In enim justo,. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+					 			<div class ="grid-text">
+					 				<div class ="grid-img">
+					 					<img src="images/c2.png" />
+					 				</div>
+					 				<div class ="grid-content">
+						 				<h4>Joe Doe</h4>
+						 				<span>Creative Deirector at Gmoogle.com</span>
+					 				</div>
+					 				<div class="clearfix"> </div>
+					 			</div>
+					 			<span class="arrow-one"> </span>
+							</div>
+							<div class="col-md-6 client-gride4">
+								<p>Nulla consequat massa quis enim. Donec pede justo, arcu. venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+					 			<div class ="grid-text">
+					 				<div class ="grid-img">
+					 					<img src="images/c1.png" />
+					 				</div>
+					 				<div class ="grid-content">
+						 				<h4>Joe Doe</h4>
+						 					<span>Creative Deirector at Gmoogle.com</span>
+					 				</div>
+					 				<div class="clearfix"> </div>
+					 			</div>
+					 			<span class="arrow-one"> </span>
+							</div>	
+					 	</div>
+					 	<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+-->
+
+		<div class="skill" id="portfolio">
+			<div class="container">
+					<div class="skill-section">
+					 	<div class=" col-md-6 skill-text">
+					 		<h4>My Experience</h4>
+					 		<p>I am currently a junior at the University of Washington studying Mechanical Engineering with a dual minor in Mathematics &amp; Entrepreneurship. Over my time I've found that I love to teach! So I decided to put that to the test and improve my math abilities while at the same time helping others. </p>
+					 		<p class="para1"> Out of them all my favorite subject is by far <b>Integration</b>. It is the most puzzle like and there are so many ways to solve problems. Whether its through trig substitution, or revolution of solids, I LOVE it. <br>
+               <center class="math"> Math is \(\int e^{xy}\) </center>
+          
+                            </p> <br>
+					 		<a class="story-btn" href="#">Q &amp; A</a>
+					 	</div>
+					 	<div class=" col-md-6 skill-bars">
+					 		<div class="poling">
+					 			<h3>Focus Areas</h3>
+		              <div class="poll">
+			              <div class="poll_desc">
+							<h4>Algebra / PreCalculus</h4>
+						  </div>
+						  <div class="percentage">
+							<p>99%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			             <div class="skills">
+			              	<div style="width:99%"> </div>
+	                      </div>
+				       </div>
+				       <div class="poll">
+			              <div class="poll_desc">
+							<h4>Calculus</h4>
+						  </div>
+						  <div class="percentage">
+							<p>95%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:95%"> </div>
+	                       </div>
+				       </div>
+				        <div class="poll">
+			              <div class="poll_desc">
+							<h4>Differential Equations</h4>
+						  </div>
+						  <div class="percentage">
+							<p>95%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:95%"> </div>
+	                      </div>
+				       </div>
+				        <div class="poll">
+			              <div class="poll_desc">
+							<h4>Linear Algebra</h4>
+						  </div>
+						  <div class="percentage">
+							<p>75%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:75%"> </div>
+	                      </div>
+				       </div>
+				       <div class="poll nth-child">
+			              <div class="poll_desc">
+							<h4>MATLAB</h4>
+						  </div>
+						  <div class="percentage">
+							<p>70%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:70%"> </div>
+	                      </div>
+				       </div>
+				     </div>
+	  				</div>
+					<div class="clearfix"> </div>
+
+					 	</div>
+					 	
+					 	<div class="clearfix"> </div>
+					</div>
+			</div>
+
+			<!--end-skills-->
+
+				<!------------//end----------------->	
+				<div id="project" class="project">
+							<div class="container">
+								<div class="project-head">
+								 <div class="col-md-7">
+									   <h3>Got a question? </h3>
+									   <p>I am building my math knowledge by solving fun and difficult problems, or ones that help people become better mathematicians. So ask me a question and if I like it, I'll solve it and post it here.</p>
+								</div>
+								 <div class="col-md-5">
+									  <a class="dow-btn" id ="question" href="mailto:coven@uw.edu?subject=Math Question">Ask a question</a>
+								</div>
+							 	</div>
+							 </div>
+						  </div>
+		<!--footer-->
+		<!----- /start-footer---->
+						<div class="footer">
+							<div class="container">
+									
+							<div class="footer-bottom"><p>&copy; 2014  All rights  Reserved |  &nbsp;<a href="http://davidcoven.me?subject=Math%20Question%20Request">David BasedMathematician Coven</a></p></div>
+						</div>				
+					</div>
+					<!----- //End-footer---->
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
