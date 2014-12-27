@@ -144,23 +144,39 @@ In this same function we can use our rules from above (#3) to solve for the hori
                                 <p>
                                     When finding the <b>oblique asymptote</b>, find the quotient of the numerator and denominator. If there are any remainders, disregard them. You only need the quotient. The graph of the function can have a either a horizontal asymptote, or an oblique asymptote. You can <b>not</b> have one of each. This particular function does not have an oblique asymptote. This may sound complex so we'll look at an example below. 
                                 </p>
-                                \[ f(x) =\frac{x^2 +8x - 20}{x-1} \]
+                                \[ \require{enclose} f(x) =\frac{x^2 +8x - 20}{x-1} \]
                                 The first step is to preform long devision. 
                             \[    \begin{array}{rl}
-    \underline{\phantom{000000} x + 9} & \hbox{(Final answer)} \\[-5pt]
-    x - 1 |  x^2 +8x - 20 \\
+    {\phantom{000000} x + 9} & \hbox{(Final answer)} \\[-5pt]
+    x - 1 \enclose{longdiv}{x^2 +8x - 20}\kern-.2ex \\
       \underline{-x^2 +x} & \hbox{(Multiply by x to math the highest degree)} \\
       9x - 20 & \hbox{(Remainder)} \\
       \underline{-9x + 9\phantom{0}} & \hbox{(Multiply x-1 by 9)} \\
       \phantom{0}-11 & \hbox{} \\
   \end{array} \]
+                                
 
                                 <p>
                                 
 Now we have our solution, \(y = x + 9\). This is the equation for the <b>oblique asymptote</b> of the function \(f(x)\). Notice the remainder of the division problem is disregarded like we said earlier. It plays no part in the equation for the oblique asymptote. <br> <br>
-                                   Now let us look at a rational function where the degree of the numerator is equal to the degree of the denominator.
+                                   Now let us look at an example that will show us how to solve for the horizontal asymptote. For this we need a rational function where the degree of the numerator is equal to the degree of the denominator.
                                 </p>
+                                \[ 
+                                f(x) = \frac{2x^2-4x+8}{3x^2-27}
+                                \]
+                                <p>
+                                We can see that the degree of the numerator is the same as the degree of the denominator. Both of them are \( x^2 \). <br> <br>
+                                    
+                                    Since the degree of the numerator equals that of the denominator, the equation for the <b>horizontal asymptote</b> is the ratio of the two leading coefficients. Thats it!
+                                    \[ y =\frac{2}{3} \]
+                                </p>
+                                <center>
+                                <ul class="actions center">
+                               <li><a href="https://www.khanacademy.org/math/algebra2/polynomial_and_rational/asymptotes-graphing-rational/v/asymptotes-of-rational-functions" class="button special icon fa-youtube-play" target="_blank">Videos</a></li>
+                                <li><a href="http://cdn.kutasoftware.com/Worksheets/Alg2/Graphing%20Rational%20Functions.pdf" class="button special icon fa-file-text-o" target="_blank">Practice Problems</a></li>
+                           </ul></center>
 							</div>
+                           
 						</section>
                     
                     <!--                    five-->
@@ -270,7 +286,7 @@ Now we have our solution, \(y = x + 9\). This is the equation for the <b>oblique
                         <section id="end">
 							<div class="container">
 								<h3>Homework &amp; Extras</h3>
-								<p>You can click the time for each assignment to download the solutions.</p>
+								<p>You can click the hw # for the assignment and the time for the solutions. </p>
 									<div class="table-wrapper">
 										<table>
 											<thead>
@@ -287,7 +303,7 @@ Now we have our solution, \(y = x + 9\). This is the equation for the <b>oblique
                                                     <td>10 minutes</td>
 												</tr>
 												<tr>
-                                                    <td><a href="#" download>Two</a></td>
+                                                    <td><a href="hw/hw2.pdf" target="_blank">Two</a></td>
 													<td>Practice rational function graphing</td>
                                                     <td><a href="#" download>1.5 hours</a></td>
 												</tr>
